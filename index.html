@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Porfolio Builder</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/hovers.css">
 </head>
 <body>
     <!-- navigation -->
@@ -23,18 +25,58 @@
             <h2>Welcome to the website</h2>
         </div>
     </section>
-
+    <!-- about -->
     <section id="about">
         <div class="about">
-            <h1>About</h1>            
+            <h1>Undraw Illustration</h1>  
+            <div class="about-container">
+                <div class="image-container">
+                    <h2>Work in team
+                        <img src="img/undraw/cowork.png" alt="Workers" id="image1">
+                    </h2>
+                </div>
+                <div class="image-container">
+                    <h2>Achive goals
+                        <img src="img/undraw/hero.png" alt="Workers" id="image2">
+                    </h2>
+                </div>
+                <div class="image-container">
+                    <h2>Never settle
+                        <img src="img/undraw/review.png" alt="Workers" id="image3">
+                    </h2>
+                </div>
+            </div>          
         </div>
     </section>
+    <!-- projects -->
     <section id="projects">
         <div class="projects">
-            <h1>Projects</h1>            
+            <h1>Projects</h1>  
+            <!-- First project -->
+            <div class="view view-first project-three">
+                <img id="thumbnail" src="img/projects/gradient-generator.jpg" />
+                <div class="mask">
+                    <h2>Background Generator #1</h2>
+                  
+                    <p>Create your own gradient backgrounds</p>                
+                    <a href="https://gradient-generator.diegolajus.vercel.app/" target="_blank" class="info">Go!</a>
+                </div>
+            </div> 
+            <!-- second project -->
+            <div class="view view-first project-three">
+                <img id="thumbnail" src="img/projects/robot.jpg" />
+                <div class="mask">
+                    <h2>Robot Jokes API #2</h2>
+                  
+                    <p>Jokes may not  be funny</p>                
+                    <a href="https://robot-speaker-git-main.diegolajus.vercel.app/" target="_blank" class="info">Go!</a>
+                </div>
+            </div> 
+            
         </div>
+
     </section>    
-    
+    <!-- contact -->
     <section id="contact">
         <div class="contact">
             <h1>Contact</h1>            

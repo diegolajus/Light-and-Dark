@@ -1,0 +1,130 @@
+.view {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    float: left;
+    border: 10px solid rgba(59, 58, 58, 0.5);  /*FRAME OF PROJECTS*/
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 20px 10px  #e6e6e6;
+    -moz-box-shadow: 10px 10px 20px 10px #e6e6e6;
+    box-shadow: 10px 10px 20px 10px #e6e6e6;
+    cursor: default;
+    transition: all 0.5s ease-in-out;
+
+}
+   .view:hover{
+    border: 10px solid rgba(59, 58, 58, 0.9);  /*FRAME OF PROJECTS*/
+   }
+ .view .mask,.view .content {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+ .view img {
+    width: 600px;
+    height: 400px;
+}
+ .view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+    /* padding: 5px; */
+    background: rgba(59, 58, 58, 0.8);  /*BG TITLE PROJECT*/
+    /* margin: 20px 0 0 0; */
+}
+ .view p {
+    text-align: center;
+    width: 75%;
+    font-size:28px;
+    color: #fff;
+    border: solid 4px rgba(59, 58, 58, 0.8);
+   
+}
+ .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 10px;
+    background:rgba(59, 58, 58, 0.8);
+    color: #fff;
+    -webkit-box-shadow: 0 0 1px #000;
+    -moz-box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px #000;
+    font-size: 1.35rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+
+ .view a.info:hover {
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+    filter: brightness(110%);
+}
+ .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.mask{
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#srcs{
+   height: auto;
+   width: auto;
+   transform: scale(0.50);
+   
+}
+#projects{
+   padding-top: 4rem;
+   text-align: center;
+   
+}
+
+#srcs-container{
+    display: flex;
+    flex-direction: row ;
+}
+
+#projects-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#projects h2{    
+   color: rgb(172, 168, 168);
+   font-family: 'VT323', monospace;
+   text-align: center;
+   letter-spacing: 4px;   
+   margin-top: 80px;
+}
+
+.src-used{      
+   display: flex;
+
+}
+
+#projects p {
+   font-family: 'VT323', monospace;
+   letter-spacing: 2px;
+   font-size: 1.5rem;
+}
+
+
+
