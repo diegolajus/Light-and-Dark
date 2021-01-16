@@ -11,7 +11,9 @@
     opacity: 0;
     height: 115%;
 
-    background: linear-gradient(-45deg, #e48c72, #b144f0, #5bc8f0, #5ef1cf);
+    /* background: linear-gradient(-45deg, #e48c72, #b144f0, #5bc8f0, #5ef1cf); */
+    background:linear-gradient(to top, #000000,#000000, #ffffff) ;
+    
     background-size: 280% 280%; /*Agranda el background para que haya espacio para movimiento*/ 
     animation: movement 5s ease-in-out infinite;
     

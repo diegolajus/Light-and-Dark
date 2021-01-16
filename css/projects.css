@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald&display=swap');
+
 .view {
     width: 600px;
     height: 400px;
@@ -36,7 +38,7 @@
     position: relative;
     font-size: 35px;
     /* padding: 5px; */
-    background: rgba(59, 58, 58, 0.8);  /*BG TITLE PROJECT*/
+    /* background: rgba(59, 58, 58, 0.8);  BG TITLE PROJECT */
     /* margin: 20px 0 0 0; */
 }
  .view p {
@@ -44,7 +46,7 @@
     width: 75%;
     font-size:28px;
     color: #fff;
-    border: solid 4px rgba(59, 58, 58, 0.8);
+    border: solid 4px rgba(66, 66, 66, 0.7);
    
 }
  .view a.info {
@@ -52,7 +54,7 @@
     text-decoration: none;
     padding: 4px 10px;
     background:rgba(59, 58, 58, 0.8);
-    color: #fff;
+    color: white;
     -webkit-box-shadow: 0 0 1px #000;
     -moz-box-shadow: 0 0 1px #000;
     box-shadow: 0 0 1px #000;
@@ -64,12 +66,7 @@
 }
 
 
- .view a.info:hover {
-    -webkit-box-shadow: 0 0 5px #000;
-    -moz-box-shadow: 0 0 5px #000;
-    box-shadow: 0 0 5px #000;
-    filter: brightness(110%);
-}
+
  .main{
     display: flex;
     justify-content: center;
@@ -108,11 +105,13 @@
 }
 
 #projects h2{    
-   color: rgb(172, 168, 168);
-   font-family: 'VT323', monospace;
+   color: rgb(66, 66, 66);
+   font-family:Kaushan Script, sans-serif ;
    text-align: center;
    letter-spacing: 4px;   
    margin-top: 80px;
+   font-size: 2rem;
+   font-weight: bold;
 }
 
 .src-used{      
@@ -121,7 +120,7 @@
 }
 
 #projects p {
-   font-family: 'VT323', monospace;
+   font-family:Kaushan Script, sans-serif ;
    letter-spacing: 2px;
    font-size: 1.5rem;
 }
