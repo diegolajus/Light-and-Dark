@@ -7,10 +7,19 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/hovers.css">
 </head>
 <body>
+    <!-- DarkLight navigation -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch" >
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
     <!-- navigation -->
     <nav id="nav">
         <a href="#home">HOME</a>
@@ -50,36 +59,28 @@
     </section>
     <!-- projects -->
     <section id="projects">
-        <div class="projects">
-            <h1>Projects</h1>  
-            <!-- First project -->
-            <div class="view view-first project-three">
-                <img id="thumbnail" src="img/projects/gradient-generator.jpg" />
-                <div class="mask">
-                    <h2>Background Generator #1</h2>
-                  
-                    <p>Create your own gradient backgrounds</p>                
-                    <a href="https://gradient-generator.diegolajus.vercel.app/" target="_blank" class="info">Go!</a>
-                </div>
-            </div> 
-            <!-- second project -->
-            <div class="view view-first project-three">
-                <img id="thumbnail" src="img/projects/robot.jpg" />
-                <div class="mask">
-                    <h2>Robot Jokes API #2</h2>
-                  
-                    <p>Jokes may not  be funny</p>                
-                    <a href="https://robot-speaker-git-main.diegolajus.vercel.app/" target="_blank" class="info">Go!</a>
-                </div>
-            </div> 
-            
-        </div>
-
+        <h1>Buttons</h1>
+        <div class="buttons">
+            <button class="primary" >Primary</button>
+            <button class="secondary" >Secondary</button>
+            <button class="primary" disabled >Disabled</button>
+            <button class="outline">Outline</button>
+            <button class="secondary outline" >Alt Outline</button>
+            <button class="outline" disabled >Disabled</button>
+        </div> 
+        <div class="text-box" id="text-box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam vero, dicta saepe incidunt maxime magnam asperiores, in sed ipsam sit esse omnis nisi ipsum fugit optio recusandae id dolor! Ducimus.</p>
+        </div>        
     </section>    
     <!-- contact -->
     <section id="contact">
-        <div class="contact">
-            <h1>Contact</h1>            
+        <h1>Contact</h1>  
+        <div class="social-icons">
+            <i class="fab fa-github"></i>    
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-discord"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
         </div>
     </section>
     
