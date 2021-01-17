@@ -11,6 +11,14 @@ function imageMode(color){
     image3.src = `/img/undraw_feeling_proud_${color}.svg`
     image1.src = `/img/undraw_conceptual_idea_${color}.svg`
 }
+//function toggle themes
+function toggleDarkLightMode(isDark){
+    nav.style.backgroundColor = isDark ? "rgb(0 0 0 / 50%)":"rgb(255 255 255 / 50%)";
+    textBox.style.backgroundColor = isDark ? "rgb(255 255 255 / 50%)" : "rgb(0 0 0 / 50%)";
+    toggleIcon.children[0].textContent = isDark ? "Dark Mode":"Light Mode";
+    isDark ? toggleIcon.children[1].classList.replace("fa-sun","fa-moon"):toggleIcon.children[1].classList.replace("fa-moon","fa-sun");
+    isDark ? imageMode("dark") : imageMode("light");
+}
 //function for dark theme
 function darkMode(){
     nav.style.backgroundColor = "rgb(0 0 0 / 50%)";
@@ -19,7 +27,6 @@ function darkMode(){
     toggleIcon.children[1].classList.replace("fa-sun","fa-moon");
     imageMode("dark")
 }
-
 //function for light theme
 function lightMode(){
     nav.style.backgroundColor = "rgb(255 255 255 / 50%)";
@@ -28,21 +35,29 @@ function lightMode(){
     toggleIcon.children[1].classList.replace("fa-moon","fa-sun");
     imageMode("light")
 }
-
 //Swithc theme
 function switchTheme(event){
-
     if(event.target.checked){
         //change css off buttons
         document.documentElement.setAttribute("data-theme", "dark");
-        darkMode();
+        localStorage.setItem("theme", "dark")
+        toggleDarkLightMode(true);
     }else{
         //change css off buttons
         document.documentElement.setAttribute("data-theme", "main")
-        lightMode();
+        localStorage.setItem("theme", "light")
+        toggleDarkLightMode(false)
     }
-    console.log(event.target.checked)
 }
-
 //event listener
 toggleSwitch.addEventListener("change", switchTheme);
+
+//Check local Sotrage for theme
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme){
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    if(currentTheme === "dark"){
+        toggleSwitch.checked = true;
+        toggleDarkLightMode(true)
+    }
+}
